@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+    font-family: Arial;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+header {
+    height: 9vh;
+    background: #FFC4C4;
+    box-shadow: 0 0 1rem #FFC4C4;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Logo {
+    width: 42px;
+    height: 42px;
+    margin: 4px;
+}
+
+.testinho ul {
+  display: flex;
+  margin: 23px;
+}
+
+.testinho li {
+  color: black;
+  list-style-type: none;
+  cursor: pointer;
+  padding-left: 2rem;
+}
+
+
+.agend1 {
+    align-items: center;
+    padding: 6vh;
+    background-color: #FCE2DB;
+    margin: 5;
+    margin-top: 30px;
+    box-shadow: 0 0 1rem white;
+    display:flex;
+    flex-direction: row;
+}
+
+.h1cat {
+    color: #4B5D67;
+}
+
+h2 {
+    text-align: center;
+    vertical-align: middle;
+}
+.teste {
+    margin: auto;
+    width: 25%;
+    border-radius: 10px;
+    padding: 1px;
+    background-color: #FCE2DB;
+    color: #4B5D67;
+    box-shadow: 0 0 1rem white;
+    margin-top: 20px;
+}
+
+.months {
+  justify-content: center;
+  display: flex;
+}
+/*Cabeçalho do Mês*/
+.mes {
+    padding: 70px 25px;
+    width: 55%;
+    background: #A5BECC;
+    text-align: center;
+    margin-top: 5px;
+}
+.mes ul {
+    margin:0;
+    padding:0;
+}
+
+.mes ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    list-style-type: none;    
+}
+
+/*Botão anterior dentro do cabeçãlho do mês*/
+.mes .prev {
+    float: left;
+    padding-top: 10px;
+}
+
+/*Próximo botão*/
+.mes .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+  display: flex;
+  justify-content: center;
+}
+/*Dias úteis (Dom - Seg)*/
+.DiasDaSemana {
+    margin:0;
+    padding: 10px 0;
+    background-color: white;
+    width: 55%;
+}
+
+.DiasDaSemana li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+
+.dias {
+  justify-content: center;
+  display: flex;
+}
+/*Dias (1-31)*/
+.days {
+    padding: 10px 0;
+    background: white;
+    margin:0;
+    width: 55%;
+}
+
+.days li {
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    color: #777;
+    margin-top: 30px;
+}
+
+/* Destaca o dia "atual" */
+
+.days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    margin-top: 30px;
+    color: white !important
+  }
+
+  /* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+    .DiasDaSemana li, .days li {width: 13.1%;}
+  }
+  
+  @media screen and (max-width: 420px) {
+    .DiasDaSemana li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+  }
+  
+  @media screen and (max-width: 290px) {
+    .DiasDaSemana li, .days li {width: 12.2%;}
+  }
+
+  h3 {
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .dados {
+    margin: auto;
+    width: 25%;
+    border-radius: 10px;
+    padding: 7px;
+    background-color: #FCE2DB;
+    color: #4B5D67;
+    box-shadow: 0 0 1rem white;
+    margin-top: 25px;
+  }
+
+  .dados1 {
+    margin: auto;
+    width: 25%;
+    border-radius: 10px;
+    padding: 7px;
+    background-color: #FCE2DB;
+    color: #4B5D67;
+    box-shadow: 0 0 1rem white;
+    margin-top: 25px;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  div.container {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  input[type="text"] {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #FF6FB5;
+    border: 1px solid #FF6FB5;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 0 0 1rem ;
+  }
+
+  input[type="text"]:hover {
+    background-color: white;
+    color: #FF6FB5;
+  }
+
+  div.container2 {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type="e-mail"] {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #FF6FB5;
+    border: 1px solid #FF6FB5;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 0 0 1rem;
+  }
+
+  input[type="e-mail"]:hover {
+    background-color: white;
+    color: #FF6FB5;
+  }
+
+  .especie {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type="text"] {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #FF6FB5;
+    border: 1px solid #FF6FB5;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: 0.5s;
+    box-shadow: 0 0 1rem;
+  }
+
+  input[type="text"]:hover {
+    background-color: white;
+    color: #FF6FB5;
+  }
+  
+  a {
+    color: #a10035;
+    text-decoration: none;
+  }
+
+  footer {
+    height: 8vh;
+    box-sizing: border-box;
+    margin: 0;
+    background-color: #e3cfbf;
+    width: 100%;
+    box-shadow: 0 0 1rem #FFC4C4;
+  }
+
+  footer, .ngc {
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .gustavo {
+    margin: 0;
+    height: 8px;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 20px;
+  }
+

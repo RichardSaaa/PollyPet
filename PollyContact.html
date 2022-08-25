@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polly Contatos</title>
+    <link rel="stylesheet" href="PollyContact.css">
+</head>
+<body>
+
+    <h1>Formulário de Contato</h1>
+
+    <form action="https://formsubmit.co/junior.medrado.39@gmail.com" method="POST" class="form">
+
+        <label for="name" id="name">Nome</label>
+        <input type="text" name="name" required />
+
+        <label for="e-mail" id="e-mail">E-mail</label>
+        <input type="e-mail" name="e-mail" required />
+
+        <label for="message">Mensagem</label>
+        <textarea name="message" id="message" placeholder="Escreva aqui"></textarea>
+        
+        <input type="hidden" name="_captcha" value="false">
+
+        <input type="hidden" name="_next" value="http://127.0.0.1:5501/obrigado.html">
+        
+        <button type="submit">Enviar</button>
+
+    </form>
+
+
+
+
+
+
+
+</body>
+</html>
